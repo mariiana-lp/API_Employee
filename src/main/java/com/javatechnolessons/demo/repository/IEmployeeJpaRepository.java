@@ -1,6 +1,7 @@
 package com.javatechnolessons.demo.repository;
 
 import java.util.List;
+import java.util.Optional;
 
 import com.javatechnolessons.demo.model.Employee;
 import com.javatechnolessons.demo.model.Role;
@@ -17,11 +18,9 @@ import org.springframework.stereotype.Repository;
 public interface IEmployeeJpaRepository extends JpaRepository<Employee, Long> {
     // select fields from employee where employeeid='[param]'
     Employee findByEmployeeid(String employeeid);
-
     List<Employee> findByFirstName(String firstName);
-
     List<Employee> findByLastName(String lastName);
-
     List<Employee> findByRole(Role role);
+    Optional<Employee> findById(Long id);
 
 }

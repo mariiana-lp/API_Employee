@@ -1,5 +1,7 @@
 package com.javatechnolessons.demo;
 
+import com.javatechnolessons.demo.model.Employee;
+import com.javatechnolessons.demo.model.Role;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
